@@ -4,7 +4,6 @@ http_request:latest
 slack:latest
 docker-workflow:latest
 sonar:latest
-slack:latest
 google-login:latest
 github-oauth:latest
 anchore-container-scanner:latest
