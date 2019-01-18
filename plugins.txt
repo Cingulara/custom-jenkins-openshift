@@ -1,6 +1,7 @@
 testlink:latest
 build-pipeline-plugin:latest
 http_request:latest
+slack:latest
 docker-workflow:latest
 sonar:latest
 google-login:latest
