@@ -1,5 +1,17 @@
 # custom-jenkins-openshift
-Customize the Jenkins S2I image to include plugins, k8s pod templates, etc.
+Customize the Jenkins S2I image to include plugins, k8s pod templates, etc. This works for OpenShift as well as Minishift. To use this custom setup, 
+* Import the imagestreamCustomJenkins.yaml definition into your OpenShift cluster
+* Import the buildConfig.yaml into your OpenShift cluster
+* Go to the openshift project/namespace and then go to Builds --> Builds and see the BuildConfig just loaded
+* Click on the build name to go into the build defintion
+* Click Start Build
+* When Complete go to your project namespace you wish to use
+* Click on the jenkins deployment configuration link in the Overview area of your project
+* Click the Actions --> Edit button on the top right
+* In the image to deploy, choose the "custom-jenkins" and then "latest" listed with the openshift namespace
+* Click Save
+
+The new Jenkins will automatically deploy and be ready after a few minutes. Log in and verify your plugins are there! If you want more plugins, just fork this GH repo and edit.
 
 ## The plugins I want to include by default
 * SonarQube
