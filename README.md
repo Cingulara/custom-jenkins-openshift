@@ -31,7 +31,7 @@ The new Jenkins will automatically deploy and be ready after a few minutes. Log 
 
 You can add others by studying the structure and using the correct parameters and image references internal or external
 
-## Adding Acccess to the Red Hat Docker Registry
+## Adding Access to the Red Hat Docker Registry
 If you have not already done so you need to setup a secret in OpenShift to pull from the RH Registry as it requires a Red Hat Developer account. The link is at the bottom of this page but the steps are really here. Perform them inside the "openshift" namespace specifically after you login with your OC command from the Username --> Copy Login Command in the top right corner of the OpenShift Web Console. Replace the "user-name" and "password" with your Red Hat Developer login and password. If you do not have one, go here: https://developers.redhat.com/.
 
 ```
