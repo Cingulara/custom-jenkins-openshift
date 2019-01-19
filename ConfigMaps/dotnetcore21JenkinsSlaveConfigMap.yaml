@@ -1,24 +1,24 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: jenkins-agent-dotnetcore22
+  name: jenkins-agent-dotnetcore21
   labels:
     role: jenkins-slave
 data:
-  dotnetcore22: |-
+  dotnetcore21: |-
     <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
       <inheritFrom></inheritFrom>
-      <name>dotnetcore22</name>
+      <name>dotnetcore21</name>
       <instanceCap>2147483647</instanceCap>
       <idleMinutes>0</idleMinutes>
-      <label>dotnetcore22</label>
+      <label>dotnetcore21</label>
       <serviceAccount>jenkins</serviceAccount>
       <nodeSelector></nodeSelector>
       <volumes/>
       <containers>
         <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
           <name>jnlp</name>
-          <image>registry.access.redhat.com/dotnet/dotnet-22-jenkins-slave-rhel7</image>
+          <image>registry.access.redhat.com/dotnet/dotnet-21-jenkins-slave-rhel7</image>
           <privileged>false</privileged>
           <alwaysPullImage>false</alwaysPullImage>
           <workingDir>/tmp</workingDir>
